@@ -9,3 +9,9 @@ $ stack unpack stack-1.0.0
 $ cd stack-1.0.0
 $ stack install --flag cryptonite:-support_aesni
 ```
+
+This works around the following:
+
+- https://github.com/commercialhaskell/stack/issues/1477
+- https://github.com/haskell-crypto/cryptonite/issues/21
+- https://github.com/haskell-crypto/cryptonite/issues/27
