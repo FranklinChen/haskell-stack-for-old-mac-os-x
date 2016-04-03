@@ -11,6 +11,11 @@ $ stack unpack stack-1.0.0
 $ cd stack-1.0.0
 $ stack install --flag cryptonite:-support_aesni
 ```
+If you have another package that needs `cryptonite` (for example `pandoc`) you need to use the above mentioned flag again:
+
+```console
+$ stack install PACKAGE_NAME --flag cryptonite:-support_aesni
+```
 
 This works around the following:
 
