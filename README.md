@@ -9,7 +9,7 @@ Haskell Stack is not supported for this machine and no binary for it is availabl
 ```console
 $ stack unpack stack-1.0.0
 $ cd stack-1.0.0
-$ stack install --flag cryptonite:-support_aesni
+$ stack install cryptonite --flag cryptonite:-support_aesni
 ```
 
 This works around the following:
