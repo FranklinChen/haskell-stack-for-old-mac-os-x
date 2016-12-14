@@ -11,6 +11,13 @@ $ stack unpack stack-1.0.0
 $ cd stack-1.0.0
 $ stack install --flag cryptonite:-support_aesni
 ```
+
+For Stack 1.3.0 and higher, it seems we need
+
+```console
+$ stack install --flag cryptonite:-support_aesni --flag cryptonite:-support_rdrand
+```
+
 If you have another package that needs `cryptonite` (for example `pandoc`) you need to use the above mentioned flag again:
 
 ```console
